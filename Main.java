@@ -68,12 +68,14 @@ public class Main {
 		mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		// Adding some initial users to the linkedList
-		User user1 = new User("Alan", "Fahey", "1");
-		User user2 = new User("Alex", "Smith", "9827");
-		User user3 = new User("Ben", "Lewis", "846");
+		User user1 = new User("Kavon", "Kharaty", "1");
+		User user2 = new User("Rod", "Omosigho", "9827");
+		User user3 = new User("Emma", "Mc Guinness", "846");
+		User user4 = new User("Franklyn", "Okanume", "2457");
 		userList.add(user1);
 		userList.add(user2);
 		userList.add(user3);
+		userList.add(user4);
 
 		// Sports Section
 		products.add(new Product("Football", 29.99));
