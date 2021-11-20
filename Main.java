@@ -3,6 +3,7 @@ package termproject;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Frame;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -341,12 +342,35 @@ public class Main {
 
 	public class optionWindow extends JFrame {
 		
-		ImageIcon footballImage = new ImageIcon(
-				"/Users/kavonkharaty/eclipse-workspace/term-project/images/iconfinder_football_172468.png");
-		ImageIcon basketballImage = new ImageIcon(
-				"/Users/kavonkharaty/eclipse-workspace/term-project/images/iconfinder_basketball_993997.png");
-		ImageIcon boxingImage = new ImageIcon(
-				"/Users/kavonkharaty/eclipse-workspace/term-project/images/iconfinder_Boxing_Gloves_22976.png");
+		public class optionWindow extends JFrame {
+		
+		//Frank's pic
+		ImageIcon Frank1 = new ImageIcon(
+				"C:\\Users\\Rod\\OneDrive - Technological University Dublin\\Year3\\Business Modelling\\BusinessModellingProject-main\\Frank.jpg");
+		//resize image
+		Image Frank2 = Frank1.getImage().getScaledInstance(60,60, java.awt.Image.SCALE_SMOOTH);
+		ImageIcon Frank3 = new ImageIcon(Frank2);
+		
+		//Emma's pic
+		ImageIcon Emma1 = new ImageIcon(
+				"C:\\Users\\Rod\\OneDrive - Technological University Dublin\\Year3\\Business Modelling\\BusinessModellingProject-main\\Emma.jpg");
+		//resize image
+		Image Emma2 = Emma1.getImage().getScaledInstance(60,60, java.awt.Image.SCALE_SMOOTH);
+		ImageIcon Emma3 = new ImageIcon(Emma2);
+		
+		//Kavon's pic
+		ImageIcon Kavon1 = new ImageIcon(
+				"C:\\Users\\Rod\\OneDrive - Technological University Dublin\\Year3\\Business Modelling\\BusinessModellingProject-main\\Kavon.jpg");
+		//resize image
+		Image Kavon2 = Kavon1.getImage().getScaledInstance(60,60, java.awt.Image.SCALE_SMOOTH);
+		ImageIcon Kavon3 = new ImageIcon(Kavon2);
+		
+		//Rod's pic
+		ImageIcon Rod1 = new ImageIcon(
+				"C:\\Users\\Rod\\OneDrive - Technological University Dublin\\Year3\\Business Modelling\\BusinessModellingProject-main\\Rod.jpg");
+		//resize image
+		Image Rod2 = Rod1.getImage().getScaledInstance(60,60, java.awt.Image.SCALE_SMOOTH);
+		ImageIcon Rod3 = new ImageIcon(Rod2);
 				
 
 		JFrame frame = new JFrame();
@@ -357,18 +381,25 @@ public class Main {
 		JButton option3 = new JButton("Stock");
 		JButton option4 = new JButton("Order");
 		JButton option5 = new JButton("Log out");
-		JButton football = new JButton("Football", footballImage);
-		JButton basketball = new JButton("Basketball", basketballImage);
-		JButton boxing = new JButton("Boxing Gloves", boxingImage);
+		JButton Rod = new JButton("Rod Omosigho", Rod3);
+		JButton Kavon = new JButton("Kavon Kharaty", Kavon3);
+		JButton Emma = new JButton("Emma Mc Guinness", Emma3);
+		JButton Frank = new JButton("Franklyn Okanume", Frank3);
 		
 		
 
 		optionWindow() {
 			outerPanel.setLayout(new MigLayout());
 			insidePanel.setLayout(new MigLayout());
-			insidePanel.add(football);
-			insidePanel.add(basketball);
-			insidePanel.add(boxing, "wrap");
+			insidePanel.add(Rod, "cell 0 0,grow");
+			insidePanel.add(Kavon, "cell 0 0,grow");
+			insidePanel.add(Emma, "cell 0 0,grow");
+			//insidePanel.add(Emma, "wrap");
+			insidePanel.add(Frank, "cell 0 0,wrap");
+			Rod.setSize(40, 40);
+			Kavon.setSize(40, 40);
+			Emma.setSize(40, 40);
+			Frank.setSize(40, 40);
 			option1.setSize(200, 40);
 			option2.setSize(200, 40);
 			option3.setSize(200, 40);
