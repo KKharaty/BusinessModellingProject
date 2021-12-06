@@ -27,8 +27,8 @@ public class Main extends JFrame {
     	//First page
     	itemsList = new ArrayList<Item>();
     	pnlItems = new JPanel();
-    	addItems = new JButton("Create"); //create button
-    	viewItems = new JButton("Display All"); //display button
+    	addItems = new JButton("Add items"); //create button
+    	viewItems = new JButton("Display Items"); //display button
 
     	pnlItems.add(addItems); 
     	pnlItems.add(viewItems); 
