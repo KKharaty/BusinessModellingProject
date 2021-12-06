@@ -25,6 +25,7 @@ public class CreateItemGUI extends JFrame {
 	String [] item_types = {"Luxury", "Essential", "Gift"};
 	String [] quantity = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
 	ArrayList<Item> item;
+	int item_ID = 0;
 
 	public CreateItemGUI( ArrayList<Item> refItem) {
 
@@ -67,7 +68,6 @@ public class CreateItemGUI extends JFrame {
 				// Read the data from the text fields
 				String item_name = txtItem_name.getText();
 				String expiration = txtExpiration.getText();
-				int item_ID = 0;
 				item_ID++;
 				// Create a customer object using the data
 				Item item1 = new Item(item_name, expiration, item_ID);
