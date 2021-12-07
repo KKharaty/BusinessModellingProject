@@ -13,7 +13,7 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 
 
-public class DisplayItemGUI {
+public class DisplayItemGUI extends JFrame{
   
   JPanel pnl;
 	JLabel lblItems;
