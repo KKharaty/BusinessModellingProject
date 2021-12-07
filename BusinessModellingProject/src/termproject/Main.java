@@ -45,10 +45,10 @@ public class Main extends JFrame {
 		
 		viewItems.addActionListener(new ActionListener() { //when display is pressed
 			public void actionPerformed(ActionEvent e) {
-				//DisplayItemGUI custDisplayframe = new DisplayItemGUI(itemsList);
-				//custDisplayframe.setTitle("Show Items");
-				//custDisplayframe.setSize(400, 300);
-				//custDisplayframe.setVisible(true);
+				DisplayItemGUI item = new DisplayItemGUI(itemsList);
+				item.setTitle("Show Items");
+				item.setSize(400, 300);
+				item.setVisible(true);
 			}
 		});
 		
