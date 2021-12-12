@@ -63,8 +63,21 @@ public class DisplayItemGUI extends JFrame{
 			
 			//when add to basket button is pressed
 			//save item and quantity
-			 //String item_chosen = (String)comboBoxItems.getSelectedItem();
-			 //Integer qty_chosen = (Integer)comboBoxItemQ.getSelectedItem();
+			 String item_chosen = (String)comboBoxItems.getSelectedItem();
+			 Integer qty_chosen = (Integer)comboBoxItemQ.getSelectedItem();
+		 	 
+		 	if(item_chosen.equals("Luxury")){
+					//calculate VAT
+				}
+			 
+			 else if(item_chosen.equals("Essential")){
+					//calculate VAT
+				}
+			 
+			 else if(item_chosen.equals("Gift")){
+					//calculate VAT
+				}
+		 
 			 //save these to a list 
 			 //ItemBasket basket = new ItemBasket(item_chosen, qty_chosen);
 			 //items_calc.add(basket);
